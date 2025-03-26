@@ -11,7 +11,7 @@ export interface Product {
     name: string;
     description: string;
     price: number;
-    sizes?: string[];
+    sizes?: { size: string; stock: number; }[];
 }
 
 export default function AdminDashboard() {
